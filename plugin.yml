@@ -1,0 +1,153 @@
+name: Practice
+version: 1.0.0
+main: zodiax\PracticeCore
+api: 4.0.0
+author: ItsZodiaX
+permissions:
+  practice.permission.cosmetics:
+    default: false
+    description: Show cosmetic UI
+  practice.permission.discord:
+    default: false
+    description: Sync discord roles
+  practice.permission.disguise:
+    default: false
+    description: Open Disguise Menu
+  practice.permission.duel:
+    default: false
+    description: Send duel request
+  practice.permission.host:
+    default: false
+    description: Host an event
+  practice.permission.hub:
+    default: false
+    description: Back to hub
+  practice.permission.info:
+    default: false
+    description: Show server's information
+  practice.permission.leaderboard:
+    default: false
+    description: Get the target leaderboard
+  practice.permission.list:
+    default: op
+    description: Show players list of target server
+  practice.permission.moveserver:
+    default: false
+    description: Transfers you to a target server
+  practice.permission.ping:
+    default: op
+    description: Get the player's ping
+  practice.permission.ranks:
+    default: false
+    description: Show ranks information
+  practice.permission.region:
+    default: false
+    description: Transfer to server
+  practice.permission.reply:
+    default: false
+    description: Reply to a message
+  practice.permission.report:
+    default: false
+    description: Report Hackers/Bugs
+  practice.permission.rules:
+    default: false
+    description: Show rules information
+  practice.permission.settings:
+    default: false
+    description: Show player's settings UI
+  practice.permission.shop:
+    default: false
+    description: Open Shop Menu
+  practice.permission.spectate:
+    default: false
+    description: Spectate a player
+  practice.permission.stats:
+    default: op
+    description: Get the player's stats
+  practice.permission.suicide:
+    default: false
+    description: Suicide yourself
+  practice.permission.vote:
+    default: false
+    description: Claim your vote
+  practice.permission.whisper:
+    default: false
+    description: Whisper a message
+  practice.permission.rank:
+    default: false
+    description: Edit a rank
+  practice.permission.set-rank:
+    default: op
+    description: Set ranks
+  practice.permission.arena:
+    default: false
+    description: Edit an arena
+  practice.permission.ban:
+    default: op
+    description: Ban a player
+  practice.permission.dailychat:
+    default: op
+    description: Log chat history to discord server
+  practice.permission.findplayer:
+    default: op
+    description: Find the server which target player is on
+  practice.permission.fly:
+    default: false
+    description: Enable/Disable fly
+  practice.permission.freeze:
+    default: false
+    description: Freeze a player
+  practice.permission.gamemode:
+    default: false
+    description: Change game mode
+  practice.permission.globalmute:
+    default: op
+    description: Global mute
+  practice.permission.hologram:
+    default: false
+    description: Place the hologram
+  practice.permission.kick:
+    default: op
+    description: Kick a player
+  practice.permission.kit:
+    default: false
+    description: Edit a kit
+  practice.permission.mute:
+    default: op
+    description: Mute player
+  practice.permission.npc:
+    default: false
+    description: Spawn/Remove NPC
+  practice.permission.pinfo:
+    default: op
+    description: Get the player's information
+  practice.permission.restart:
+    default: op
+    description: Restart the server
+  practice.permission.staff:
+    default: op
+    description: Lists all online staffs
+  practice.permission.teleport:
+    default: false
+    description: Teleport to another player
+  practice.permission.test:
+    default: false
+    description: Test
+  practice.permission.unban:
+    default: op
+    description: Unban a player
+  practice.permission.unfreeze:
+    default: false
+    description: Unfreeze a player
+  practice.permission.unmute:
+    default: op
+    description: Unmute player
+  practice.permission.vanish:
+    default: false
+    description: Enable/Disable vanish
+  practice.permission.whitelist:
+    default: op
+    description: Whitelist
+  practice.permission.xoop:
+    default: false
+    description: Give coins, shards, cosmetics

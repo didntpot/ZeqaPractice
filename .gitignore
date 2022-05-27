@@ -1,0 +1,10 @@
+.idea
+.github
+.git
+vendor
+Practice.phar
+src/mmm545
+src/poggit
+src/libasynCurl
+src/libpmquery
+.DS_Store

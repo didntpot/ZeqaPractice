@@ -1,0 +1,1036 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "bones": [
+                {
+                    "name": "body",
+                    "parent": "waist",
+                    "pivot": [0, 24, 0]
+                },
+                {
+                    "name": "waist",
+                    "pivot": [0, 12, 0]
+                },
+                {
+                    "cubes": [
+                        {
+                            "origin": [-5, 8, 3],
+                            "size": [10, 16, 1],
+                            "uv": [0, 0]
+                        }
+                    ],
+                    "name": "cape",
+                    "parent": "body",
+                    "pivot": [0, 24, 3],
+                    "rotation": [0, 180, 0]
+                }
+            ],
+            "description": {
+                "identifier": "geometry.cape",
+                "texture_height": 32,
+                "texture_width": 64
+            }
+        },
+        {
+            "description": {
+                "identifier": "geometry.humanoid.custom",
+                "texture_width": 64,
+                "texture_height": 64,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 3,
+                "visible_bounds_offset": [0, 1.5, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0]
+                },
+                {
+                    "name": "waist",
+                    "parent": "root",
+                    "pivot": [0, 12, 0]
+                },
+                {
+                    "name": "body",
+                    "parent": "waist",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 12, -2],
+                            "size": [8, 12, 4],
+                            "uv": [16, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "candycaner",
+                    "parent": "body",
+                    "pivot": [0.25, -0.3, -18.5],
+                    "rotation": [0, 0, 5],
+                    "cubes": [
+                        {
+                            "origin": [12.75, 4.6, 2.4],
+                            "size": [1, 15, 1],
+                            "inflate": 0.1,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [56, 16]
+                        },
+                        {
+                            "origin": [-7.05, 11.55, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "pivot": [-6.55, 12.45, 2.9],
+                            "rotation": [180, 0, 90],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [16.67002, 4.54145, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [56, 23]
+                        },
+                        {
+                            "origin": [-8.47747, 11.23665, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.103,
+                            "pivot": [-8.55, 12.2, 2.9],
+                            "rotation": [0, 0, 45],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [-8.27747, 11.33665, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [-8.55, 12.2, 2.9],
+                            "rotation": [0, 0, 45],
+                            "uv": [56, 19]
+                        },
+                        {
+                            "origin": [-8.38778, 8.0955, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "pivot": [-7.64564, 8.76178, 2.9],
+                            "rotation": [0, 0, -45],
+                            "uv": [56, 19]
+                        },
+                        {
+                            "origin": [-9.09935, 9.25711, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "uv": [56, 17]
+                        },
+                        {
+                            "origin": [-9.09935, 9.25711, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "uv": [56, 17]
+                        },
+                        {
+                            "origin": [12.55, 17.6, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [16.65, 4.7, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.103,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [52, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflakes",
+                    "parent": "body",
+                    "pivot": [-1.5, -0.25, -1.5]
+                },
+                {
+                    "name": "snowflake",
+                    "parent": "snowflakes",
+                    "pivot": [-7.5, -0.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [3.25, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [1.75, 26, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [6.75, 22.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [6.25, 11.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [8.25, 15.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [4.75, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake2",
+                    "parent": "snowflakes",
+                    "pivot": [-8.5, 7.75, -3.5],
+                    "cubes": [
+                        {
+                            "origin": [2.25, 18.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [0.75, 34, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [5.75, 30.75, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [5.25, 19.5, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [7.25, 23.5, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [3.75, 18.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake3",
+                    "parent": "snowflakes",
+                    "pivot": [-20.5, 9.75, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-9.75, 20.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-11.25, 36, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-6.25, 32.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-6.75, 21.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-4.75, 25.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-8.25, 20.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake6",
+                    "parent": "snowflakes",
+                    "pivot": [-12.5, 2.75, -3.5],
+                    "cubes": [
+                        {
+                            "origin": [-1.75, 13.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-3.25, 29, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [1.75, 25.75, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [1.25, 14.5, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [3.25, 18.5, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-0.25, 13.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake4",
+                    "parent": "snowflakes",
+                    "pivot": [-22.5, -0.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-11.75, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-13.25, 26, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-8.25, 22.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-8.75, 11.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-6.75, 15.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-10.25, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake5",
+                    "parent": "snowflakes",
+                    "pivot": [-16.5, -5.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-5.75, 5.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-7.25, 21, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-2.25, 17.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-2.75, 6.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-0.75, 10.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-4.25, 5.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "head",
+                    "parent": "body",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 24, -4],
+                            "size": [8, 8, 8],
+                            "uv": [0, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "hat",
+                    "parent": "head",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 24, -4],
+                            "size": [8, 8, 8],
+                            "inflate": 0.5,
+                            "uv": [32, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "cape",
+                    "parent": "body",
+                    "pivot": [0, 24, 3]
+                },
+                {
+                    "name": "leftArm",
+                    "parent": "body",
+                    "pivot": [5, 22, 0],
+                    "cubes": [
+                        {
+                            "origin": [4, 12, -2],
+                            "size": [4, 12, 4],
+                            "uv": [32, 48]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftSleeve",
+                    "parent": "leftArm",
+                    "pivot": [5, 22, 0],
+                    "cubes": [
+                        {
+                            "origin": [4, 12, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [48, 48]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftItem",
+                    "parent": "leftArm",
+                    "pivot": [6, 15, 1]
+                },
+                {
+                    "name": "rightArm",
+                    "parent": "body",
+                    "pivot": [-5, 22, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 12, -2],
+                            "size": [4, 12, 4],
+                            "uv": [40, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightSleeve",
+                    "parent": "rightArm",
+                    "pivot": [-5, 22, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 12, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [40, 32]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightItem",
+                    "parent": "rightArm",
+                    "pivot": [-6, 15, 1],
+                    "locators": {
+                        "lead_hold": [-6, 15, 1]
+                    }
+                },
+                {
+                    "name": "jacket",
+                    "parent": "body",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 12, -2],
+                            "size": [8, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [16, 32]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftLeg",
+                    "parent": "root",
+                    "pivot": [1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-0.1, 0, -2],
+                            "size": [4, 12, 4],
+                            "uv": [16, 48]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftPants",
+                    "parent": "leftLeg",
+                    "pivot": [1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-0.1, 0, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [0, 48]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightLeg",
+                    "parent": "root",
+                    "pivot": [-1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-3.9, 0, -2],
+                            "size": [4, 12, 4],
+                            "uv": [0, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightPants",
+                    "parent": "rightLeg",
+                    "pivot": [-1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-3.9, 0, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [0, 32]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.humanoid.customSlim",
+                "texture_width": 64,
+                "texture_height": 64,
+                "visible_bounds_width": 3,
+                "visible_bounds_height": 3,
+                "visible_bounds_offset": [0, 1.5, 0]
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0]
+                },
+                {
+                    "name": "waist",
+                    "parent": "root",
+                    "pivot": [0, 12, 0]
+                },
+                {
+                    "name": "body",
+                    "parent": "waist",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 12, -2],
+                            "size": [8, 12, 4],
+                            "uv": [16, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "head",
+                    "parent": "body",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 24, -4],
+                            "size": [8, 8, 8],
+                            "uv": [0, 0]
+                        }
+                    ]
+                },
+                {
+                    "name": "hat",
+                    "parent": "head",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 24, -4],
+                            "size": [8, 8, 8],
+                            "inflate": 0.5,
+                            "uv": [32, 0]
+                        }
+                    ]
+                },
+				{
+					"cubes": [
+						{
+							"origin": [4, 11.5, -2],
+							"size": [3, 12, 4],
+							"uv": [32, 48]
+						}
+					],
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 21.5, 0]
+				},
+				{
+					"cubes": [
+						{
+							"inflate": 0.25,
+							"origin": [4, 11.5, -2],
+							"size": [3, 12, 4],
+							"uv": [48, 48]
+						}
+					],
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 21.5, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 14.5, 1]
+				},
+				{
+					"cubes": [
+						{
+							"origin": [-7, 11.5, -2],
+							"size": [3, 12, 4],
+							"uv": [40, 16]
+						}
+					],
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 21.5, 0]
+				},
+				{
+					"cubes": [
+						{
+							"inflate": 0.25,
+							"origin": [-7, 11.5, -2],
+							"size": [3, 12, 4],
+							"uv": [40, 32]
+						}
+					],
+					"name": "rightSleeve",
+					"parent": "rightArm",
+					"pivot": [-5, 21.5, 0]
+				},
+				{
+					"locators": {
+						"lead_hold": [-6, 14.5, 1]
+					},
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 14.5, 1]
+				},
+                {
+                    "name": "jacket",
+                    "parent": "body",
+                    "pivot": [0, 24, 0],
+                    "cubes": [
+                        {
+                            "origin": [-4, 12, -2],
+                            "size": [8, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [16, 32]
+                        }
+                    ]
+                },
+                {
+                    "name": "cape",
+                    "parent": "body",
+                    "pivot": [0, 24, -3]
+                },
+                {
+                    "name": "snowflakes",
+                    "parent": "body",
+                    "pivot": [-1.5, -0.25, -1.5]
+                },
+                {
+                    "name": "snowflake",
+                    "parent": "snowflakes",
+                    "pivot": [-7.5, -0.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [3.25, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [1.75, 26, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [6.75, 22.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [6.25, 11.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [8.25, 15.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [4.75, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake2",
+                    "parent": "snowflakes",
+                    "pivot": [-8.5, 7.75, -3.5],
+                    "cubes": [
+                        {
+                            "origin": [2.25, 18.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [0.75, 34, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [5.75, 30.75, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [5.25, 19.5, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [7.25, 23.5, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [3.75, 18.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake3",
+                    "parent": "snowflakes",
+                    "pivot": [-20.5, 9.75, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-9.75, 20.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-11.25, 36, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-6.25, 32.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-6.75, 21.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-4.75, 25.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-8.25, 20.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake6",
+                    "parent": "snowflakes",
+                    "pivot": [-12.5, 2.75, -3.5],
+                    "cubes": [
+                        {
+                            "origin": [-1.75, 13.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-3.25, 29, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [1.75, 25.75, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [1.25, 14.5, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [3.25, 18.5, 1.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-0.25, 13.75, 1.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake4",
+                    "parent": "snowflakes",
+                    "pivot": [-22.5, -0.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-11.75, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-13.25, 26, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-8.25, 22.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-8.75, 11.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-6.75, 15.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-10.25, 10.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "snowflake5",
+                    "parent": "snowflakes",
+                    "pivot": [-16.5, -5.25, -1.5],
+                    "cubes": [
+                        {
+                            "origin": [-5.75, 5.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-7.25, 21, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-2.25, 17.75, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0]
+                        },
+                        {
+                            "origin": [-2.75, 6.5, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "pivot": [-0.75, 10.5, 3.5],
+                            "rotation": [0, 0, -180],
+                            "uv": [25, 0],
+                            "mirror": true
+                        },
+                        {
+                            "origin": [-4.25, 5.75, 3.5],
+                            "size": [7, 8, 0],
+                            "inflate": -2,
+                            "uv": [25, 0],
+                            "mirror": true
+                        }
+                    ]
+                },
+                {
+                    "name": "candycaner",
+                    "parent": "body",
+                    "pivot": [0.25, -0.3, -18.5],
+                    "rotation": [0, 0, 5],
+                    "cubes": [
+                        {
+                            "origin": [12.75, 4.6, 2.4],
+                            "size": [1, 15, 1],
+                            "inflate": 0.1,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [56, 16]
+                        },
+                        {
+                            "origin": [-7.05, 11.55, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "pivot": [-6.55, 12.45, 2.9],
+                            "rotation": [180, 0, 90],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [16.67002, 4.54145, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [56, 23]
+                        },
+                        {
+                            "origin": [-8.47747, 11.23665, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.103,
+                            "pivot": [-8.55, 12.2, 2.9],
+                            "rotation": [0, 0, 45],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [-8.27747, 11.33665, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [-8.55, 12.2, 2.9],
+                            "rotation": [0, 0, 45],
+                            "uv": [56, 19]
+                        },
+                        {
+                            "origin": [-8.38778, 8.0955, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "pivot": [-7.64564, 8.76178, 2.9],
+                            "rotation": [0, 0, -45],
+                            "uv": [56, 19]
+                        },
+                        {
+                            "origin": [-9.09935, 9.25711, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "uv": [56, 17]
+                        },
+                        {
+                            "origin": [-9.09935, 9.25711, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.102,
+                            "uv": [56, 17]
+                        },
+                        {
+                            "origin": [12.55, 17.6, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.101,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [52, 16]
+                        },
+                        {
+                            "origin": [16.65, 4.7, 2.4],
+                            "size": [1, 2, 1],
+                            "inflate": 0.103,
+                            "pivot": [6.65, 18.8, -2.5],
+                            "rotation": [0, 0, 90],
+                            "uv": [52, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightLeg",
+                    "parent": "root",
+                    "pivot": [-1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-3.9, 0, -2],
+                            "size": [4, 12, 4],
+                            "uv": [0, 16]
+                        }
+                    ]
+                },
+                {
+                    "name": "rightPants",
+                    "parent": "rightLeg",
+                    "pivot": [-1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-3.9, 0, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [0, 32]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftLeg",
+                    "parent": "root",
+                    "pivot": [1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-0.1, 0, -2],
+                            "size": [4, 12, 4],
+                            "uv": [16, 48]
+                        }
+                    ]
+                },
+                {
+                    "name": "leftPants",
+                    "parent": "leftLeg",
+                    "pivot": [1.9, 12, 0],
+                    "cubes": [
+                        {
+                            "origin": [-0.1, 0, -2],
+                            "size": [4, 12, 4],
+                            "inflate": 0.25,
+                            "uv": [0, 48]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

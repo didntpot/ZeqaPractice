@@ -1,0 +1,45 @@
+{
+    "require": {
+        "php": "^8.0",
+        "ext-gd": "*",
+        "ext-pthreads": "*",
+        "ext-igbinary": "*",
+        "ext-curl": "*",
+        "ext-yaml": "*",
+        "mmm545/libgamespyquery": "dev-master",
+        "sof3/libasynql": "^4.0.1",
+        "nethergamesmc/libasyncurl": "dev-master"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.6.7",
+        "friendsofphp/php-cs-fixer": "^2.19.3"
+    },
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+                "name": "mmm545/libgamespyquery",
+                "version":"dev-master",
+                "source": {
+                    "url": "https://github.com/mmm545/libgamespyquery",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "name": "nethergamesmc/libasyncurl",
+            "url": "https://github.com/ZeqaNetwork/libasynCurl"
+        }
+
+    ],
+    "autoload": {
+        "psr-4": {
+            "": ["src"]
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan"
+    }
+}

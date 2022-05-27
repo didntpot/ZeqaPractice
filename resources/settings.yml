@@ -1,0 +1,67 @@
+# Set maintenance mode
+maintenance: false
+
+# The name of region
+region: ""
+
+# The api key for server api
+api: ""
+
+# The api key from vote site
+vote: ""
+
+# The api key from vpn check site
+vpn:
+# 1: "vpn_Key"
+
+# The logo of server (url)
+logo: ""
+
+# The information of texture packs. (The texture pack uuid and encryption key)
+texture_packs:
+# pack_Id: "encryption_Key"
+
+# The webhooks corresponding to each server.
+webhooks:
+  # The status webhook
+  status: ""
+
+  # The ban webhook
+  ban: ""
+
+  # The logs webhook
+  logs: ""
+
+  # The chat history webhook
+  chat: ""
+
+  # The sync message webhook
+  sync: ""
+
+# The information of servers.
+servers:
+
+  North America:
+    NA Practice: "0.0.0.0:19132"
+
+  Europe:
+    EU Practice: "0.0.0.0:19132"
+
+  Asia:
+    AS Practice: "0.0.0.0:19132"
+
+# The database information
+database:
+  main:
+    host: 127.0.0.1
+    username: root
+    password: ""
+    schema: your_schema
+    port: 3306
+  extra:
+    host: 127.0.0.1
+    username: root
+    password: ""
+    schema: your_schema
+    port: 3306
+  worker-limit: 2
