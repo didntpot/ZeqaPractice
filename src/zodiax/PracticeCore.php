@@ -258,6 +258,8 @@ class PracticeCore extends PluginBase{
 		self::$pluginFolder = str_replace("\\", DIRECTORY_SEPARATOR, str_replace("/", DIRECTORY_SEPARATOR, Path::join($this->getFile(), "src", "zodiax")));
 		self::$resourceFolder = str_replace("\\", DIRECTORY_SEPARATOR, str_replace("/", DIRECTORY_SEPARATOR, Path::join($this->getFile(), "resources")));
 
+
+		$this->saveResource("settings.yml");
 		$config = new Config(self::$dataFolder . "settings.yml", Config::YAML);
 		self::$maintenance = false;
 		if($config->exists("maintenance")){
@@ -311,18 +313,19 @@ class PracticeCore extends PluginBase{
 		$this->registerGenerators();
 	}
 
-	protected function onEnable() : void{
-		if(PracticeCore::PROXY){
-			$this->getServer()->getPluginManager()->registerEvent(NetworkInterfaceRegisterEvent::class, function(NetworkInterfaceRegisterEvent $event) : void{
+	protected function onEnable() : void
+	{
+		if (PracticeCore::PROXY) {
+			$this->getServer()->getPluginManager()->registerEvent(NetworkInterfaceRegisterEvent::class, function (NetworkInterfaceRegisterEvent $event): void {
 				$network = $event->getInterface();
-				if($network instanceof DedicatedQueryNetworkInterface){
+				if ($network instanceof DedicatedQueryNetworkInterface) {
 					$event->cancel();
 					return;
 				}
-				if($network instanceof RakLibInterface && !$network instanceof WDPERakLibInterface){
+				if ($network instanceof RakLibInterface && !$network instanceof WDPERakLibInterface) {
 					$event->cancel();
 					$this->getServer()->getNetwork()->registerInterface(new WDPERakLibInterface($this->getServer(), $this->getServer()->getIp(), $this->getServer()->getPort(), false));
-					if($this->getServer()->getConfigGroup()->getConfigBool("enable-ipv6", true)){
+					if ($this->getServer()->getConfigGroup()->getConfigBool("enable-ipv6", true)) {
 						$this->getServer()->getNetwork()->registerInterface(new WDPERakLibInterface($this->getServer(), $this->getServer()->getIpV6(), $this->getServer()->getPort(), true));
 					}
 				}
@@ -330,21 +333,6 @@ class PracticeCore extends PluginBase{
 
 			new ProxyListener();
 			new ProxyTask();
-		}else{
-			$this->getServer()->getPluginManager()->registerEvent(NetworkInterfaceRegisterEvent::class, function(NetworkInterfaceRegisterEvent $event) : void{
-				$network = $event->getInterface();
-				if($network instanceof DedicatedQueryNetworkInterface){
-					$event->cancel();
-					return;
-				}
-				if($network instanceof RakLibInterface && !$network instanceof PracticeRakLibInterface){
-					$event->cancel();
-					$this->getServer()->getNetwork()->registerInterface(new PracticeRakLibInterface($this->getServer(), $this->getServer()->getIp(), $this->getServer()->getPort(), false));
-					if($this->getServer()->getConfigGroup()->getConfigBool("enable-ipv6", true)){
-						$this->getServer()->getNetwork()->registerInterface(new PracticeRakLibInterface($this->getServer(), $this->getServer()->getIpV6(), $this->getServer()->getPort(), true));
-					}
-				}
-			}, EventPriority::NORMAL, $this, true);
 		}
 
 		LogMonitor::initialize();
@@ -382,6 +370,7 @@ class PracticeCore extends PluginBase{
 		new EventHandler();
 		new PartyDuelHandler();
 		new TrainingHandler();
+
 
 		$this->getServer()->getNetwork()->setName(TextFormat::BOLD . self::COLOR . "Ze" . TextFormat::WHITE . "qa");
 		DiscordUtil::sendStatus(true);

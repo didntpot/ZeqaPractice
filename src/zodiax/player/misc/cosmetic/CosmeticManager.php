@@ -69,7 +69,7 @@ class CosmeticManager{
 	const BOUNDS_64_32 = self::BOUNDS_64_64;
 	const BOUNDS_128_128 = 1;
 
-	private static CosmeticThreadPool $cosmetic;
+	private static ?CosmeticThreadPool $cosmetic = null;
 	private static array $cosmeticHolder;
 	private static array $skinBounds;
 
@@ -590,7 +590,7 @@ class CosmeticManager{
 	}
 
 	public static function shutdown() : void{
-		self::$cosmetic->shutdown();
+		self::$cosmetic?->shutdown();
 	}
 
 	public static function saveSkinData(string $name) : void{

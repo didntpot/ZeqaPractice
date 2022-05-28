@@ -29,12 +29,16 @@ class BlockRemoverHandler extends AbstractRepeatingTask{
 	private static int $currentTick = 0;
 	/** @var array<int, Position[]> $blocks */
 	private static array $blocks = [];
-	private static BlockRemoverThreadPool $remover;
+
+	private static ?BlockRemoverThreadPool $remover = null;
+
 	/** @var array<int, Closure> $removerHandler */
 	private static array $removerHandler;
 
+
 	public function __construct(){
 		parent::__construct(PracticeUtil::secondsToTicks(1));
+		self::$remover = new BlockRemoverThreadPool();
 		@mkdir($path = Path::join(PracticeCore::getDataFolderPath(), "logs"));
 		$workers = (new Config(Path::join(PracticeCore::getDataFolderPath(), "settings.yml")))->get("database")["worker-limit"];
 		$class_loaders = [];
@@ -47,7 +51,6 @@ class BlockRemoverHandler extends AbstractRepeatingTask{
 			$class_loaders[] = $devirion->getVirionClassLoader();
 		}
 
-		self::$remover = new BlockRemoverThreadPool();
 		$workers = 1;
 		for($i = 0; $i < $workers; $i++){
 			$thread = new BlockRemoverThread(self::$remover->getNotifier());
@@ -132,6 +135,6 @@ class BlockRemoverHandler extends AbstractRepeatingTask{
 	}
 
 	public static function shutdown() : void{
-		self::$remover->shutdown();
+		self::$remover?->shutdown();
 	}
 }

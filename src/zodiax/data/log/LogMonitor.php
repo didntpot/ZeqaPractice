@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace zodiax\data\log;
 
+
 use pocketmine\Server;
 use pocketmine\utils\Config;
 use RuntimeException;

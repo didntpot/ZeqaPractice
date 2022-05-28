@@ -6,6 +6,7 @@ namespace zodiax\data\database;
 
 use libasynCurl\Curl;
 use pocketmine\utils\Config;
+use poggit\libasynql\base\DataConnectorImpl;
 use poggit\libasynql\DataConnector;
 use poggit\libasynql\libasynql;
 use poggit\libasynql\SqlThread;
@@ -23,7 +24,6 @@ class DatabaseManager{
 
 		self::$mainDB = libasynql::create(PracticeCore::getInstance(), ["type" => "mysql", "mysql" => ["host" => $databaseInfo["main"]["host"], "username" => $databaseInfo["main"]["username"], "password" => $databaseInfo["main"]["password"], "schema" => $databaseInfo["main"]["schema"], "port" => $databaseInfo["main"]["port"], "worker-limit" => $databaseInfo["worker-limit"]]], ["mysql" => "mysql.sql"]);
 		self::$extraDB = libasynql::create(PracticeCore::getInstance(), ["type" => "mysql", "mysql" => ["host" => $databaseInfo["extra"]["host"], "username" => $databaseInfo["extra"]["username"], "password" => $databaseInfo["extra"]["password"], "schema" => $databaseInfo["extra"]["schema"], "port" => $databaseInfo["extra"]["port"], "worker-limit" => $databaseInfo["worker-limit"]]], ["mysql" => "mysql.sql"]);
-
 		self::$mainDB->executeImplRaw([0 => "CREATE TABLE IF NOT EXISTS RanksData (name VARCHAR(30) NOT NULL UNIQUE, format TEXT, color TEXT, permission TEXT, isdefault BOOLEAN)"], [0 => []], [0 => SqlThread::MODE_GENERIC], function(){ }, null);
 		self::$mainDB->executeImplRaw([0 => "CREATE TABLE IF NOT EXISTS BansData (name VARCHAR(30) NOT NULL UNIQUE, reason TEXT, duration TEXT, staff TEXT)"], [0 => []], [0 => SqlThread::MODE_GENERIC], function(){ }, null);
 
